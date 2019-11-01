@@ -4,7 +4,7 @@
   "description": "Boiler plate for react-redux projects. ",
   "main": "index.js",
   "bin": {
-    "create-de-redux": "./index.js"
+    "de-redux-boiler-plate": "./index.js"
   },
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
