@@ -4,7 +4,12 @@ const defaultState = {
   focused: false,
   listSelected: [],
   checkedValues: [],
-  Categories: 'Categories'
+  Categories: 'Categories',
+  options: [
+    { label: 'Accommodation', value: 'Accommodation' },
+    { label: 'Tour', value: 'Tour' },
+    { label: 'Attractions & Experiences', value: 'Attractions & Experiences' }
+  ]
 };
 
 export default (state = defaultState, action) => {

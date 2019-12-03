@@ -1,20 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { actionCreators } from './../store';
 import { Checkbox } from 'antd';
 import { connect } from 'react-redux';
-import Button from '@material-ui/core/Button';
+
 import './style.css';
 
 class CheckboxList extends Component {
   render() {
-    const options = [
-      { label: 'Accommodation', value: 'Accommodation' },
-      { label: 'Tour', value: 'Tour' },
-      { label: 'Attractions & Experiences', value: 'Attractions & Experiences' }
-    ];
-
-    const { onChange, clearSelected, listSelected } = this.props;
-    console.log(listSelected);
+    const { onChange, clearSelected, listSelected, options } = this.props;
     return (
       <div
         onClick={e => {
@@ -42,7 +35,8 @@ const mapStateToProps = state => {
   return {
     list: state.DropDownMenu.list,
     listSelected: state.DropDownMenu.listSelected,
-    checkedValues: state.DropDownMenu.checkedValues
+    checkedValues: state.DropDownMenu.checkedValues,
+    options: state.DropDownMenu.options
   };
 };
 const mapDispatchToProps = dispatch => {
@@ -52,7 +46,6 @@ const mapDispatchToProps = dispatch => {
       dispatch(actionCreators.listValue(checkedValues));
     },
     clearSelected() {
-      console.log('clear');
       dispatch(actionCreators.clearSelected());
     }
   };
