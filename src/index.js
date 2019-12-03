@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './configureStore';
 import App from './app';
-import DropDownMenu from './DropDownMenu';
+import DropDownMenu from './DropDownMenu2';
 
 const appContainer = document.getElementById('root');
 const store = configureStore({

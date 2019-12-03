@@ -1,0 +1,51 @@
+li {
+  line-height: 2.5em;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.selectdropdown {
+  cursor: pointer;
+}
+label {
+  font-size: 0.9em;
+  color: #a1a1a1;
+}
+.ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+.ant-checkbox {
+  margin-right: 8px;
+}
+.btn {
+  float: right;
+  cursor: pointer;
+}
+.btn > button {
+  float: right;
+  outline: none;
+  display: inline-block;
+  line-height: 1.3em;
+  font-size: 1em;
+  margin-right: 15px;
+  background: transparent;
+  border: 1px solid #c5c5c5;
+  padding: 10px 15px;
+  text-align: center;
+}
+.ant-checkbox-group-item {
+  padding: 15px 15px 0;
+  display: block;
+  margin: 0;
+  height: 40px;
+}
+
+.ant-checkbox-group-item > span:last-child {
+  line-height: 1em;
+  font-size: 1em;
+  display: inline-block;
+  max-width: 86%;
+  vertical-align: middle;
+}

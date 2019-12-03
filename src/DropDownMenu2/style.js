@@ -11,7 +11,6 @@ export const Container = styled.div`
 
 export const SearchWrapper = styled.div`
   margin-top: 50px;
-  background: red;
   height: 100px;
   width: 250px;
 `;

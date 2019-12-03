@@ -11,14 +11,14 @@ class DropDownMenu extends Component {
   }
 
   render() {
-    const { focused, handleInputFocus, handleInputBlur } = this.props;
+    const { focused, handleInputFocus, Categories } = this.props;
 
     return (
       <Container>
         <SearchWrapper>
           <label htmlFor=''>I'm looking for...</label>
           <div className='selectdropdown' onClick={handleInputFocus}>
-            Categories
+            {Categories}
           </div>
           <div className={focused ? 'show' : 'hide'}>
             <MenuOption content={focused}></MenuOption>
@@ -31,7 +31,8 @@ class DropDownMenu extends Component {
 
 const mapStateToProps = state => {
   return {
-    focused: state.DropDownMenu.focused
+    focused: state.DropDownMenu.focused,
+    Categories: state.DropDownMenu.Categories
   };
 };
 const mapDispatchToProps = dispatch => {
